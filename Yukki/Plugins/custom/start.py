@@ -2,6 +2,8 @@ from config import THUMBNAIL
 from Yukki import SUDOERS, app
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from Yukki.Plugins.custom.strings import *
+
 
 async def start_menu_private(message):
     mention = "[" + message.from_user.first_name + "](tg://user?id=" + str(message.from_user.id) + ")"
